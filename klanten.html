@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onze klanten - TailTreats</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/cart.js" defer></script>
+    <script src="./js/clients.js" defer></script>
+</head>
+<body>
+    <header>
+        <section id="header-container" class="max-width-container">
+            <a href="./index.html"><img src="./assets/images/logo.webp" alt="TailTreats logo" id="logo"></a>
+            <form action="#">
+                <label for="query"></label><img src="./assets/images/icons/icon-search.png" alt="Icoon zoeken"><input type="search" id="query" placeholder="Zoeken naar...">
+            </form>
+        </section>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./shop.html">Producten</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./klanten.html" class="active">Klanten</a></li>
+        </ul>
+    </nav>
+
+    <section id="content">
+        <section id="content-wrapper" class="container">
+            <main id="klanten">
+
+            </main>
+
+            <aside>
+                <h3>Winkelwagen</h3>
+                <article class="cart-item">
+                    <h4 class="cart-item-name">EcoGroom Houten Kattenkam</h4>
+                    <section class="cart-item-info">
+                        <img src="./assets/images/products/cat-comb.webp" alt="Ecologisch verantwoord katten kam" class="cart-item-image" width="100px" height="auto">
+                        <p><span class="cart-item-price">&euro; </span><span class="cart-item-price">14,90</span><br>
+                        Aantal: <span class="cart-item-quantity">2</span></p>           
+                        <button class="btn-cart-delete">
+                            <img src="./assets/images/icons/icon-trash.png" alt="icoon verwijderen">
+                        </button>
+                    </section>            
+                </article>
+                <article class="cart-item">
+                    <h4 class="cart-item-name">LiquidLick Cat Treats</h4>
+                    <section class="cart-item-info">
+                        <img src="./assets/images/products/cat-treats-liquid.webp" alt="Product in winkelmandje" class="cart-item-image" width="100px" height="auto">
+                        <p><span class="cart-item-price">&euro; </span><span class="cart-item-price">7,90</span><br>
+                        Aantal: <span class="cart-item-quantity">5</span></p>           
+                        <button class="btn-cart-delete">
+                            <img src="./assets/images/icons/icon-trash.png" alt="icoon verwijderen">
+                        </button>
+                    </section>            
+                </article>        
+                <p>Totaal <span class="cart-total-price">&euro; <span id="cart-total-price">69,30</span></span></p>                  
+            </aside>
+        </section>
+    </section>
+    <footer>
+        <p>&copy; TailTreats 2023 | <a href="#logo">Terug naar boven</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiquidLick Cat Treats - TailTreats</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <section id="header-container" class="max-width-container">
+            <a href="./index.html"><img src="./assets/images/logo.webp" alt="TailTreats logo" id="logo"></a>
+            <form action="#">
+                <label for="query"></label><img src="./assets/images/icons/icon-search.png" alt="Icoon zoeken"><input type="search" id="query" placeholder="Zoeken naar...">
+            </form>
+        </section>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li><li><a href="shop.html" class="active">Producten</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="container product-detail">
+            <figure>
+                <img src="assets/images/products/cat-treats-liquid.webp" alt="Vloeibaar snack voor katten">
+                <figcaption>
+                    Vloeibaar snack voor katten van het merk LiquidLick
+                </figcaption>
+            </figure>
+            <section class="product-detail-info">
+                <h1>LiquidLick Cat Treats</h1>
+                <h3>Vloeibare kattensnack, gemaakt met melk voor katten</h3>
+                <ul>
+                    <li>Gemaakt met melk voor katten</li>
+                    <li>Onweerstaanbaar lekker</li>
+                    <li>Een smakelijke manier om je liefde te tonen</li>
+                </ul>
+                <section>
+                    <span id="product-detail-price">&euro; 11,90</span>
+                    <span id="review-amount"><a href="#reviews">12 reviews</a></span>
+                    <button id="wishlist">
+                        <img src="assets/images/icons/icon-heart-white.png" alt="icoon hart">
+                    </button>
+                </section>                
+                <form action="#" method="GET">
+                    <label for="item-amount"></label>
+                    <input type="number" id="item-amount" name="item-amount" value="1">
+                    <button type="submit" value="Toevoegen" class="form-submit">Toevoegen</button>
+                </form>
+            </section>
+        </article>
+        <section class="container product-review">
+            <h2 id="reviews">Reviews</h2>
+            <form action="#" method="GET">
+                <fieldset>
+                    <label for="review-username">Gebruikersnaam<span class="required">*</span></label>
+                    <input type="text" id="review-username" class="input-full-width" name="review-username" placeholder="Gebruikersnaam" required>
+                    <label for="review-email">E-mail<span class="required">*</span></label>
+                    <input type="email" id="review-email" class="input-full-width" name="review-email" placeholder="E-mail" required>
+                    <label for="review-text">Review<span class="required">*</span></label>
+                    <textarea name="review-text" id="review-text" class="input-full-width" placeholder="Uw review" required></textarea>
+                </fieldset>                
+                <button type="submit" value="verzenden" class="form-submit">Verzenden</button>
+            </form>
+            <p><span class="required">*</span> zijn verplicht in te vullen velden.</p>
+        </section>       
+    </main>
+
+    <aside class="aside">
+        <h3>Winkelwagen</h3>
+        <article class="cart-item">
+            <p>1 x EcoGroom Houten Kattenkam</p>
+            <span class="cart-item-price">&euro; 14,90</span>
+            <button>
+                <img src="assets/images/icons/icon-trash.png" alt="icoon verwijderen">
+            </button>
+        </article>
+        <article class="cart-item">
+                <p>2 x EcoPaw Kartonnen Krabplank</p>
+                <span class="cart-item-price">&euro; 19,90</span>
+                <button>
+                    <img src="assets/images/icons/icon-trash.png" alt="icoon verwijderen">
+                </button>
+        </article>
+        <p>Totaal <span id="cart-total-price">&euro; 54,70</span></p>                  
+    </aside>
+    <footer>
+        <p>&copy; TailTreats 2023 | <a href="#logo">Terug naar boven</a></p>
+    </footer>
+</body>
+</html>

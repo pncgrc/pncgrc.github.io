@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacteer ons - TailTreats</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script src="./js/mapScript.js" defer></script>
+     <script src="../js/cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <section id="header-container" class="max-width-container">
+            <a href="./index.html"><img src="./assets/images/logo.webp" alt="TailTreats logo" id="logo"></a>
+            <form action="#">
+                <label for="query"></label><img src="./assets/images/icons/icon-search.png" alt="Icoon zoeken"><input type="search" id="query" placeholder="Zoeken naar...">
+            </form>
+        </section>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./shop.html">Producten</a></li>
+            <li><a href="./contact.html" class="active">Contact</a></li>
+            <li><a href="./klanten.html">Klanten</a></li>
+        </ul>
+    </nav>
+
+    <section id="content">
+        <section id="content-wrapper" class="container">
+            <main>
+                <section id="contact-content">
+                    <h1>Contacteer ons</h1>
+                    <form action="#" method="GET">
+                        <fieldset>
+                            <label for="content-name">Naam<span class="required">*</span></label>
+                            <input type="text" id="content-name" class="input-full-width" name="content-name" placeholder="Naam" required>
+                            <label for="content-surname">Achternaam<span class="required">*</span></label>
+                            <input type="text" id="content-surname" class="input-full-width" name="content-surname" placeholder="Achternaam" required>
+                            <label for="content-email">E-mail<span class="required">*</span></label>
+                            <input type="email" id="content-email" class="input-full-width" name="content-email" placeholder="E-mail" required>
+                            <label for="content-subject">Onderwerp<span class="required">*</span></label>
+                            <input type="text" id="content-subject" class="input-full-width" name="content-subject" placeholder="Onderwerp" required>
+                            <label for="content-message">Bericht<span class="required">*</span></label>
+                            <textarea name="content-message" id="content-message" class="input-full-width" placeholder="Uw bericht" required></textarea>
+                        </fieldset>
+                        <button type="submit" value="verzenden" class="form-submit">Verzenden</button>             
+                    </form>
+                    <p><span class="required">*</span> zijn verplicht in te vullen velden.</p>
+                </section>
+                <section>
+                    <h2 id="meetup">Baasjes bijeenkomst</h2>
+                    <p>Ben je aanwezig tijdens onze allereerste baasjes bijeenkomst in het Rivierenhof? Het wordt een picknick dag vol met kattenpraat!<br>Prik de datum vast: 24/03/2024 om 14u!</p>
+                    <div id="tailTreatsMap"></div>
+                </section>             
+            </main>
+
+            <aside>
+                <h3>Winkelwagen</h3>
+                <article class="cart-item">
+                    <h4 class="cart-item-name">LiquidLick Cat Treats</h4>
+                    <section class="cart-item-info">
+                        <img src="./assets/images/products/cat-treats-liquid.webp" alt="Product in winkelmandje" class="cart-item-image" width="100px" height="auto">
+                        <p><span class="cart-item-price">&euro; </span><span class="cart-item-price">7,90</span><br>
+                        Aantal: <span class="cart-item-quantity">5</span></p>           
+                        <button class="btn-cart-delete">
+                            <img src="./assets/images/icons/icon-trash.png" alt="icoon verwijderen">
+                        </button>
+                    </section>            
+                </article>
+                <p>Totaal <span class="cart-total-price">&euro; <span id="cart-total-price">39,50</span></span></p>                  
+            </aside>
+        </section>
+    </section>
+    <footer>
+        <p>&copy; TailTreats 2023 | <a href="#logo">Terug naar boven</a></p>
+    </footer>
+</body>
+</html>

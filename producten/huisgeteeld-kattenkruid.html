@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huisgeteelde kattenkruid - TailTreats</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/cart.js" defer></script>
+    <script src="../js/wishlist.js" defer></script>
+    <script src="../js/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../assets/images/logo.webp" alt="TailTreats logo" id="logo"></a>
+        <form action="#">
+            <label for="query"></label><img src="../assets/images/icons/icon-search.png" alt="Icoon zoeken"><input type="search" id="query" placeholder="Zoeken naar...">
+        </form>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../shop.html" class="active">Producten</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../klanten.html">Klanten</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="container product-detail">
+            <figure>
+                <img src="../assets/images/products/homegrown-catnip.webp" alt="Huisgeteelde kattenkruid">
+                <figcaption>
+                    Geen pesticiden gebruikt
+                </figcaption>
+            </figure>
+            <section class="product-detail-info">
+                <h1>Huisgeteelde kattenkruid</h1>
+                <h3>Kattenkruid, geteeld in onze tuin</h3>
+                <ul>
+                    <li>Geen pesticiden gebruikt</li>
+                    <li>Eindeloos plezier en stimulatie voor je katachtige vriend</li>
+                </ul>
+                <section>
+                    <span id="product-detail-price">&euro; 11,90</span>
+                    <span id="review-link"><a href="#reviews">Reviews</a></span>
+                    <button id="wishlist">
+                        <img src="../assets/images/icons/icon-heart-white.png" alt="icoon hart">
+                    </button>
+                </section>                
+                <form action="#" method="GET" id="review-form">
+                    <label for="item-amount"></label>
+                    <input type="number" id="item-amount" name="item-amount" value="1">
+                    <button type="submit" value="Toevoegen" class="form-submit">Toevoegen</button>
+                </form>
+            </section>
+        </article>
+        <section class="product-review">
+            <h2 id="reviews">Reviews</h2>
+            <form action="#" method="GET">
+                <fieldset>
+                    <label for="review-username">Gebruikersnaam<span class="required">*</span></label>
+                    <input type="text" id="review-username" class="input-full-width" name="review-username" placeholder="Gebruikersnaam" required>
+                    <label for="review-text">Review<span class="required">*</span></label>
+                    <textarea name="review-text" id="review-text" class="input-full-width" placeholder="Uw review" required></textarea>
+                </fieldset>                
+                <button type="submit" value="verzenden" class="form-submit">Verzenden</button>
+            </form>
+            <p><span class="required">*</span> zijn verplicht in te vullen velden.</p>
+            <section id="user-reviews"></section>
+        </section>       
+    </main>
+
+    <aside>
+        <h3>Winkelwagen</h3>
+        <article class="cart-item">
+            <h4 class="cart-item-name">EcoGroom Houten Kattenkam</h4>
+            <section class="cart-item-info">
+                <img src="../assets/images/products/cat-comb.webp" alt="Ecologisch verantwoord katten kam" class="cart-item-image" width="100px" height="auto">
+                <p><span class="cart-item-price">&euro; </span><span class="cart-item-price">14,90</span><br>
+                Aantal: <span class="cart-item-quantity">2</span></p>           
+                <button class="btn-cart-delete">
+                    <img src="../assets/images/icons/icon-trash.png" alt="icoon verwijderen">
+                </button>
+            </section>            
+        </article>
+        <article class="cart-item">
+            <h4 class="cart-item-name">LiquidLick Cat Treats</h4>
+            <section class="cart-item-info">
+                <img src="../assets/images/products/cat-treats-liquid.webp" alt="Product in winkelmandje" class="cart-item-image" width="100px" height="auto">
+                <p><span class="cart-item-price">&euro; </span><span class="cart-item-price">7,90</span><br>
+                Aantal: <span class="cart-item-quantity">5</span></p>           
+                <button class="btn-cart-delete">
+                    <img src="../assets/images/icons/icon-trash.png" alt="icoon verwijderen">
+                </button>
+            </section>            
+        </article>
+        <p>Totaal <span class="cart-total-price">&euro; <span id="cart-total-price">69,30</span></span></p>                  
+    </aside>
+    <footer>
+        <p>&copy; TailTreats 2023 | <a href="#logo">Terug naar boven</a></p>
+    </footer>
+</body>
+</html>
