@@ -513,6 +513,8 @@ footer a {
     padding: 0 2rem 4.5rem 2rem;
 }
 
+.product-review p:first-of-type { margin-bottom: 3rem; }
+
 #user-reviews article {
     background-color: var(--open-white);
     padding: 1rem;

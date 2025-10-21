@@ -536,6 +536,8 @@ footer a {
 **********************                       ************************
 *********************************************************************/
 
+#contact-content { margin-bottom: 5rem;}
+
 .input-full-width {
     display: block;
     width: 100%;
