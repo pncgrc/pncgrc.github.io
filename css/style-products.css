@@ -37,7 +37,7 @@ body {
     margin: 0 auto;
 }
 
-header, nav { padding: 0 2rem; }
+/*header, nav { padding: 0 2rem; }*/
 
 .container-no-aside {
     padding: 4.5rem 2rem;
@@ -715,6 +715,11 @@ textarea {
     html {
         font-size: 112.5%;
     }
+
+    aside {
+        min-width: auto;
+    }
+
     /* HEADER */
 
     #header-container {
@@ -742,13 +747,19 @@ textarea {
     }
 
     .product-detail figure {
-        width: 22rem;
+        width: 100%;
         margin: 0 auto 2rem auto;
     }
 
     .product-detail-info {
         margin: 0;
     }
+
+    main .container {
+        padding: 3rem 0;
+    }
+
+    .product-review { padding: 0; }
 }
 
 /********************************************************************
@@ -794,4 +805,12 @@ textarea {
     #about {
         flex-direction: column;
     }
+
+    /* PRODUCT DETAIL */
+
+    main .container { padding: 3rem 0; }
+
+    aside { padding: 1rem; }
+
+    .product-review { padding: 0; }
 }
