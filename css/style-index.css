@@ -715,6 +715,14 @@ textarea {
         padding: 1rem 0.5rem;
     }
 
+    .card-transition {
+        transition-property: none;
+    }
+
+    .card-transition:hover {
+        transform: none;
+    }
+
     .card-transition:nth-of-type(2) {
         margin: 0;
     }
